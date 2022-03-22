@@ -62,11 +62,6 @@ function showDate() {
     document.body.appendChild(a);
 }
 
-function reqListener () {
-        
-    console.log(this.responseText);
-}
-         
 function colombra(nb){
    
     if(nb == 1){
@@ -85,15 +80,25 @@ function colombra(nb){
     }
 
     if(nb == 3){
-    var oReq = new XMLHttpRequest();
-    oReq.onload = reqListener;
-    oReq.open("get", "http://www.boredapi.com/api/activity?key=5881028", true);
-      oReq.send();
-      console.log(oReq.type)
+        var oReq = new XMLHttpRequest();
+        oReq.open("get", "http://www.boredapi.com/api/activity?key=[i]", true);  // i va allaer de 1 à 10000000000000000000000000000
+        oReq.send();
+        oReq.responseType = 'json';  // convertir en json
+        oReq.onload = reqListener;   // appelle une fonction reqListener
       
     }
 
 }
+
+function reqListener () {
+    let responseObj = this.response;
+    console.log("L'activité est : " + responseObj.activity);
+    console.log("Le type est : " + responseObj.type);
+    console.log("Nombre de participant : " + responseObj.participants);
+    console.log("Le prix est : " + responseObj.price + " €");
+
+    console.log(responseObj);
+}     
 
 colombra(3);
 
