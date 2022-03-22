@@ -83,7 +83,7 @@ function colombra(nb){
         var oReq = new XMLHttpRequest();
         oReq.open("get", "http://www.boredapi.com/api/activity?key=[i]", true);  // i va allaer de 1 à 10000000000000000000000000000
         oReq.send();
-        oReq.responseType = 'json';  // convertir en json
+        oReq.responseType = 'json';  // convertir en json {"NomVariable": "valeur1234"}, si csv : valeur,valeur,valeur
         oReq.onload = reqListener;   // appelle une fonction reqListener
       
     }
