@@ -14,6 +14,18 @@
 <p>Présentation de l'appli</p>
 <h3>Choisissez votre livre</h3>
   <script src="js/script.js"></script>
+
+  <div class="input-group mb-3">
+    <label class="input-group-text" for="inputGroupSelect01">Catégories</label>
+    <select class="form-select" id="choix"  onchange="choix()">
+      <option selected>Choix...</option>
+      <option value="1">Livres Adultes</option>
+      <option value="2">Livres Jeunesse</option>
+      <option value="3">Bandes dessinées Adultes</option>
+      <option value="4">Bandes dessinées Jeunesses</option>
+    </select>
+  </div>
+  
 </body>
 
 </html>
