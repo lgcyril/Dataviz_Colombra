@@ -76,7 +76,7 @@ h1 {
     float: left;
     width: 50%;
     height: 300px ;
-    border: 4px solid black;
+    
     background-color: lightblue;
 
 }
@@ -84,7 +84,7 @@ h1 {
 /* insertion photo bibliothèque */
 .bloc1 img{
     width: 100%; /* on rempli à 100% les 50% de la class "bloc1"> */
-    height: 293px;
+    height: 300px;
 
     
 }
@@ -183,4 +183,10 @@ main{
 }
 
 /*.block-footer:nth-child(odd){ background-color: blue; }*/
+table{
+    border-collapse: collapse;
+}
 
+td,th{
+    border: 1px solid black;
+}

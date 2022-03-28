@@ -10,10 +10,29 @@ async function livreAdulte() {
         cache: 'default'
     };
     try {
+        let rang,titre,auteur;
+
+
         let response = await fetch('https://opendata.paris.fr/api/records/1.0/search/?dataset=les-1000-titres-les-plus-reserves-dans-les-bibliotheques-de-pret&q=&rows=33&sort=rang&facet=type_de_document&facet=auteur&refine.type_de_document=Livre+adulte')
         let result = await response.json()
-        for (let i = 0; i < result.records.length; i++)
-        console.log(result.records[i].fields.rang + ". " + result.records[i].fields.titre + " de " + result.records[i]. fields.auteur)
+
+        document.getElementById("Afficher Tableau").innerHTML = "<th>Rang </th> <th>Titre </th><th>Auteur </th></tr><tr><td id='rang'></td><td id='titre'></td><td id='auteur'></td></tr> <br>"
+        
+        for (let i = 0; i < result.records.length; i++){
+            rang = result.records[i].fields.rang;
+            console.log(rang)
+            titre =result.records[i].fields.titre;
+            document.getElementById("rang").innerHTML += rang + '<br>' 
+            document.getElementById("titre").innerHTML += titre + '<br>'
+
+            auteur = result.records[i].fields.titre;
+            document.getElementById("auteur").innerHTML += auteur + '<br>'
+        }
+        //console.log(result.records[i].fields.rang + ". " + result.records[i].fields.titre + " de " + result.records[i]. fields.auteur)
+
+        //Insertion du tableau ds le js
+    
+        
     }
     catch (error) {
         console.log(error);
