@@ -1,6 +1,186 @@
+body{
+    margin: 250px;
+    margin-top: auto;
+    background-color: white;
+    font-family: 'Fahkwang', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+
 h1 {
-    color: rgb(273, 72, 50);
-    background-color: rgb(248, 217, 209);
+    color: blue;
+   margin-top: 40px;
 	text-align: center;
 }
+
+
+/*  . : pour récupérer  la class= "conteneur"> */
+.conteneur1{
+    width: 100%; /*largeur totale de l'entete  "logo"+"nav"*/
+    /* margin: 0 auto; pourquoi?*/
+   
+    
+}
+
+#header{
+    
+    width: 100%;
+    height: 35px;/*taille adéquat pour coller la nav à la photo*/ 
+    display: flex;
+   border-bottom: 2px solid grey; 
+}
+
+/*  . : pour récupérer  <div class= "logo"> */
+.logo{
+    float: left;/* pour mettre cote à cote "logo" à 20% et la nav> */
+    width: 20%;
+    height: 120px;
+    background-color: blue;
+    background-image: url("img/paris.jpeg");
+    margin: auto;
+    border: 2px solid white;
+}
+
+/* insertion photo du logo */
+.conteneur1 img{
+    width: 100%;/* on rempli les 20% de la class "logo"> */
+    height: 120px;
+    
+}
+
+/*  # : pour récupérer  <nav id="menu"> */
+#menu{
+    float: left;/* pour mettre la nav à coté "logo" à 70% > */
+    width: 70%;
+    height: 50px;
+    line-height: 50px;
+    display: flex;
+    
+    margin-top: 35px;
+
+}
+
+/*  # : pour récupérer l' id menu et tous les div de menu */
+#menu div{
+    float: left;
+    width: 25%;
+    display: flex;
+    background-color: white;
+    color: darkblue;
+   
+}
+
+
+/*bloc1 photo de la biblio sur la gauche*/
+.bloc1{
+    float: left;
+    width: 50%;
+    height: 300px ;
+    border: 4px solid black;
+    background-color: lightblue;
+
+}
+
+/* insertion photo bibliothèque */
+.bloc1 img{
+    width: 100%; /* on rempli à 100% les 50% de la class "bloc1"> */
+    height: 293px;
+
+    
+}
+
+/*bloc2 photo de la biblio sur la droite*/
+.bloc2{
+    float: right;
+    width: 40%;
+    height: 300px;
+    margin: 20px ; /*espace entre les blocs, marges extérieures*/
+    text-align: center ;
+    background-color: beige;
+}
+
+span{
+    text-align: center;
+}
+
+h3{
+    text-align: center;
+}
+
+/*bloc3 Présentation du site sur la droite*/
+.bloc3{
+    float:right;
+    width: 70%;
+    height: 350px;
+    margin: 40px auto;/*espace entre les blocs, marges extérieures*/
+    text-align: justify;
+    background-color: bisque;
+}
+
+/*bouton de choix de catégorie */
+.bouton{
+    
+    width: 100%;
+    height: 50px;
+    margin: 90px auto;/* margin: auto; permet de justifier*/
+    /* background-color: blueviolet;permet de voir la ZONE où il y un problème, ici avec le bouton!!!*/
+}
+
+
+
+/*bloc4 horaire  en bas de la présentation du bloc3*/
+.bloc4{
+    float: right;/* block placé coté droit à 60% */
+    width: 60%;
+    height: 200px;
+    margin: 10% auto; /* permet de justifier et de mettre en le bloc*/
+    text-align:left;
+    /*background-color: chocolate;*/
+    border-top: 2px solid gray;
+}
+
+section{
+    float: left;
+    width: 50%;
+    height: fit-content;
+    padding: 5px;
+}
+
+/*bloc5 Sommaire coté gauche*/
+.bloc5{
+    float: left;/* block placé coté gauche à 20% */
+    width: 20%;
+    height: 200px;
+    margin: 10px;
+    /*background-color: darkorange;*/
+    border-top: 2px solid gray;
+    
+}
+
+main{
+    background-color: white;
+}
+
+.bloc{
+
+    width: 50
+}
+
+/* # :  on recupère <id="footer"> */
+#footer{
+    float: left;
+    background-color: gainsboro; 
+    width: 100%; 
+    height: 80px;
+}
+
+.block-footer{
+    float: left;
+    width: 50%;
+    height: 80px;
+    line-height: 80px;
+    
+}
+
+/*.block-footer:nth-child(odd){ background-color: blue; }*/
 

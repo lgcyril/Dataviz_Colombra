@@ -7,24 +7,149 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Fahkwang:ital,wght@1,200&family=Roboto:ital,wght@0,100;0,700;1,400&display=swap" rel="stylesheet">
 </head>
 
 <body>
-<h1>La biblio' Colombra</h1>
-<p>Présentation de l'appli</p>
-<h3>Choisissez votre catégorie</h3>
-  <script src="js/script.js"></script>
+  <!---------- creation d'une en tete -------------------->
+  
+  <header id="header">
+    <!-- Conteneur auto centré -->
+    <div class="conteneur1">
+      <!-- logo float left à gauche-->
+				<div class="logo">
+					<span>
+            <p>
+        
+              <img src="img/paris.jpeg" alt="logo" />
+          </p> 
+        </span>
+          
+        </div>  
 
-  <div class="input-group mb-3">
-    <label class="input-group-text" for="inputGroupSelect01">Catégories</label>
-    <select class="form-select" id="choix"  onchange="choix()">
-      <option selected>Choix...</option>
-      <option value="1">Livres Adultes</option>
-      <option value="2">Livres Jeunesse</option>
-      <option value="3">Bandes dessinées Adultes</option>
-      <option value="4">Bandes dessinées Jeunesses</option>
-    </select>
+        <!--element de menu-->
+        <nav id="menu">
+          <div> Service </div>
+					<div> Municipalité </div>
+					<div> Participer!</div>
+					<div> Que faire à Paris?</div>
+          
+        </nav>
+    </div>
+
+  </header>
+  <!------------- création  du main -------------------------->
+  <div id="contain">
+      <main>
+
+        <div class="conteneur">
+          <!--photo de la  bibliotheque-->
+          <div class="bloc1"><img src="img/images-7.jpeg" alt=" bibliotheque" >
+          </div>
+          
+          <script src="js/script.js"></script>
+          
+          <!--photo sera sur la gauche-->
+          <div class="bloc2"> <h1><strong>Bibliothèque <br> Colombra</strong> <br></h1>
+            
+            <span>Date de mise à jour <br>+ affichage de l'heure </span>
+          </div>
+
+          <div class="bloc3">
+            <h3>Bienvenue chez Bibliothèque COLOMBRA!- <br>objectif du site </h3> 
+            
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore maxime atque, eos fugiat illum facere labore eum saepe molestiae odio minima iusto provident voluptates aliquid, omnis tempore quo quasi magni.</p
+                >
+           </div>
+
+           <!-- Inverser BOUTON ET SOMMAIRE -->
+          
+          <!--Bouton pour choisir les catégorie en -->
+          <div class="bouton"> 
+            <div class="input-group mb-3">
+                <label class="input-group-text" for="inputGroupSelect01">Catégories</label>
+                    <select class="form-select" id="choix"  onchange="choix()">
+                        <option selected>Choix...</option>
+                        <option value="1">Livres Adultes</option>
+                        <option value="2">Livres Jeunesse</option>
+                        <option value="3">Bandes dessinées Adultes</option>
+                        <option value="4">Bandes dessinées Jeunesses</option>
+                    </select>     
+          </div>
+          
+        
+
+          <!--Bloc affichage horaire coté droit-->
+          <div class="bloc4">
+            <!--Titre Horaire...--> 
+            <h4>Horaires </h4> 
+  
+              <section>
+                <div> Fermeture le Lundi</div>
+                <div>Mardi </div>
+                <div>Mercredi</div>
+                <div>Jeudi</div>
+                <div>Vendredi</div>
+                <div>Samedi</div>
+              </section>
+
+              <section>
+                <div></div> <br>
+                <div>10:00 à 19:00</div>
+                <div>10:00 à 19:00</div>
+                <div>13:00 à 19:00</div>
+                <div>10:00 à 19:00</div>
+                <div>10:00 à 19:00</div>
+              </section>
+          </div>
+
+          <!--Bloc Sommaire-->
+          <div class="bloc5">
+            <!--Titre Sommaire...--> 
+            <div>
+              <h4>Sommaire</h4>
+            </div>
+            <br>
+            <ul> <!--puces -->
+              <li>Horaires</li>
+              <li>Accès</li> <!-- block à créer trouver api pour met
+              ttre une carte -->
+              <li>Contact</li>  <!-- block à créer -->
+              <li>Services</li> <!-- block à créer -->
+            </ul>
+          </div>
+      
+
+        </div>
+        
+      </div>
+    </main>
   </div>
+
+<!--------------  Création du footer ------------------------------>
+  <footer>
+    <!--pied de page contenant les 2 blocs-->
+    <footer id="footer">
+      <!--conteneur auto centré-->
+      
+      <div class="conteneur2">
+
+        <div class="block-footer">
+          <span>footer 1</span>
+        </div>
+
+        <div class="block-footer">
+          <span>footer 2</span>
+        </div>
+
+      </div>
+      
+    </footer>
+
+  </footer>
 
 </body>
 

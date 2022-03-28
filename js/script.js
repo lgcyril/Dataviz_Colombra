@@ -51,7 +51,7 @@ async function bdAdultes() {
             cache: 'default'
         };
         try {
-            let response = await fetch('https://gggopendata.paris.fr/api/records/1.0/search/?dataset=les-1000-titres-les-plus-reserves-dans-les-bibliotheques-de-pret&q=&rows=33&sort=rang&facet=type_de_document&facet=auteur&refine.type_de_document=Bande+dessin%C3%A9e+adulte')
+            let response = await fetch('https://opendata.paris.fr/api/records/1.0/search/?dataset=les-1000-titres-les-plus-reserves-dans-les-bibliotheques-de-pret&q=&rows=33&sort=rang&facet=type_de_document&facet=auteur&refine.type_de_document=Bande+dessin%C3%A9e+adulte')
             let result = await response.json()
             for (let i = 0; i < result.records.length; i++)
                 console.log(result.records[i].fields.rang + ". " + result.records[i].fields.titre + " de " + result.records[i]. fields.auteur)
