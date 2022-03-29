@@ -8,8 +8,8 @@ body{
 
 
 h1 {
-    color: blue;
-   margin-top: 40px;
+    color: black;
+    margin-top: 40px;
 	text-align: center;
 }
 
@@ -27,7 +27,7 @@ h1 {
     width: 100%;
     height: 35px;/*taille adéquat pour coller la nav à la photo*/ 
     display: flex;
-   border-bottom: 2px solid grey; 
+   border-bottom: 2px solid grey;/* trait gris au-dessus des écritures*/ 
 }
 
 /*  . : pour récupérer  <div class= "logo"> */
@@ -35,8 +35,7 @@ h1 {
     float: left;/* pour mettre cote à cote "logo" à 20% et la nav> */
     width: 20%;
     height: 120px;
-    background-color: blue;
-    background-image: url("img/paris.jpeg");
+    background-color:white;
     margin: auto;
     border: 2px solid white;
 }
@@ -53,9 +52,9 @@ h1 {
     float: left;/* pour mettre la nav à coté "logo" à 70% > */
     width: 70%;
     height: 50px;
-    line-height: 50px;
+    line-height: 60px;
     display: flex;
-    
+    font-size:larger;/* taille des lettres*/
     margin-top: 35px;
 
 }
@@ -182,11 +181,11 @@ main{
     
 }
 
-/*.block-footer:nth-child(odd){ background-color: blue; }*/
+/*.block-footer:nth-child(odd){ background-color: blue; }
 table{
     border-collapse: collapse;
 }
 
 td,th{
     border: 1px solid black;
-}
+}*/
