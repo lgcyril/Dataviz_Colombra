@@ -5,46 +5,35 @@ body{
     font-family: 'Fahkwang', sans-serif;
     font-family: 'Roboto', sans-serif;
 }
-
-
 h1 {
     color: black;
    margin-top: 40px;
-	text-align: center;
+    text-align: center;
     font-weight: bold;
 }
-
 /* TABLEAU */
 td, th {
     border: 1px solid bisque;
     padding: 10px;
-   
 }
-
 td {
     text-align: center;
 }
-
 tr:nth-child(even) {
     background-color: #eee;
-    
 }
-
 th[scope="col"] {
     background-color: bisque;  /* #F8D9D1;*/
     color: #FA4832;
-     text-align: center;
+    text-align: center;
 }
-
 th[scope="row"] {
     background-color: bisque; /*  d7d9f2*/
 }
-
 caption {
     padding: 10px;
     caption-side: bottom;
 }
-
 table {
     border-collapse: collapse;
     border: 2px solid rgb(200, 200, 200);
@@ -52,25 +41,19 @@ table {
     font-family: sans-serif;
     font-size: .8rem;
 }
-
-
 /*  . : pour récupérer  la class= "conteneur"> */
 .conteneur1{
     width: 100%; /*largeur totale de l'entete  "logo"+"nav"*/
     /* margin: 0 auto; pourquoi?*/
-   
-    
 }
-
+/*   # : pour récupérer  <header id="header"> */
 #header{
-    
     width: 100%;
-    height: 35px;/*taille adéquat pour coller la nav à la photo*/ 
+    height: 35px;/*taille adéquat pour coller la nav à la photo*/
     display: flex;
-   border-bottom: 2px solid grey;/* trait gris au-dessus des écritures*/ 
+   border-bottom: 2px solid grey;/* trait gris au-dessus des écritures*/
 }
-
-/*  . : pour récupérer  <div class= "logo"> */
+/*   . : pour récupérer  <div class= "logo"> */
 .logo{
     float: left;/* pour mettre cote à cote "logo" à 20% et la nav> */
     width: 20%;
@@ -79,14 +62,11 @@ table {
     margin: auto;
     border: 2px solid white;
 }
-
 /* insertion photo du logo */
 .conteneur1 img{
     width: 100%;/* on rempli les 20% de la class "logo"> */
     height: 120px;
-    
 }
-
 /*  # : pour récupérer  <nav id="menu"> */
 #menu{
     float: left;/* pour mettre la nav à coté "logo" à 70% > */
@@ -97,9 +77,7 @@ table {
     font-weight: bold;
     font-size:small;/* taille des lettres*/
     margin-top: 35px;
-
 }
-
 /*  # : pour récupérer l' id menu et tous les div de menu */
 #menu div{
     float: left;
@@ -107,124 +85,110 @@ table {
     display: flex;
     background-color: white;
     color: darkblue;
-   
 }
-
 /* Carré du champ recherche*/
-/* 
+/*
 #champs  {
     border: grey solid 1px;
     background-color: rgb(69, 42, 224);
-    margin: auto; 
+    margin: auto;
     width: 150px;
     height: 30px;
     text-align: right;
     padding: -50px;
 } */
-
 .recherche {
-   
     width: 150px;
     height: 40px;
     margin-bottom: 50px;
     text-align: right;
- 
     padding-left: 50px;
 }
-
 /*bloc1 photo de la biblio sur la gauche*/
 .bloc1{
     float: left;
-    width: 50%;
+    width: 55%;
     height: 300px ;
     background-color: lightblue;
-
 }
-
 /* insertion photo bibliothèque */
 .bloc1 img{
     width: 100%; /* on rempli à 100% les 50% de la class "bloc1"> */
     height: 300px;
-
-    
+    border-radius: 20px;
 }
-
-/*bloc2 photo de la biblio sur la droite*/
+/*bloc2 Titre biblio sur la droite*/
 .bloc2{
     float: right;
     width: 40%;
-    height: 300px;
+    height: 250px;
     margin: 20px ; /*espace entre les blocs, marges extérieures*/
     text-align: center ;
     background-color: beige;
+    border-radius: 20px;
 }
-
 span{
     text-align: center;
 }
-
 h3{
     text-align: center;
 }
-
+h4{
+    font-weight: bold;
+    color: darkblue;
+    padding: 10px; /*espace entre les titres et le trait gris*/
+}
 /*bloc3 Présentation du site sur la droite*/
 .bloc3{
     float:right;
     width: 70%;
-    height: 350px;
+    height: 300px;
     margin: 40px auto;/*espace entre les blocs, marges extérieures*/
-    text-align: justify;
+    margin-bottom: 100px;
+    padding: 20px;
+    text-align: center;
     background-color: bisque;
+    border-radius: 20px;
 }
-
 #dateheure {
     color:#1a3bf8;
     font-size: smaller;
-
-
 }
-
-
-
 /*bouton de choix de catégorie */
 .bouton{
-    
     width: 100%;
     height: 50px;
     margin: 90px auto;/* margin: auto; permet de justifier*/
     /* background-color: blueviolet;permet de voir la ZONE où il y un problème, ici avec le bouton!!!*/
 }
-
 .input-group-text {
-    font-weight: bold;
+    font-weight: bold;/*lettre en gras*/
 }
-
 .form-select  {
     font-weight: bold;
 }
-
+#afficheTableau{
+    margin-bottom: 50px; /*espce entre bouton catégorie et bloc(horaire et sommaire)*/
+}
 option {
     font-weight: bold;
 }
-
 /*bloc4 horaire  en bas de la présentation du bloc3*/
 .bloc4{
     float: right;/* block placé coté droit à 60% */
     width: 60%;
-    height: 200px;
-    margin: 10% auto; /* permet de justifier et de mettre en le bloc*/
+    height: 220px;
+    margin: 5px auto; /* permet de justifier et de mettre une marge en dessous*/
     text-align:left;
     /*background-color: chocolate;*/
     border-top: 2px solid gray;
 }
-
 section{
     float: left;
-    width: 50%;
+    width: 50%;/*mise des 2 sections côte à côte*/
     height: fit-content;
     padding: 5px;
 }
-
 /*bloc5 Sommaire coté gauche*/
 .bloc5{
     float: left;/* block placé coté gauche à 20% */
@@ -233,37 +197,54 @@ section{
     margin: 10px;
     /*background-color: darkorange;*/
     border-top: 2px solid gray;
-    
 }
-
+li{
+    padding: 10px;/*bespace entre les liens*/
+}
+/* Accès côté gauche */
+.bloc6{
+    float: right;/* block placé coté droit à 60% */
+    width: 60%;
+    height: 200px;
+    margin: 20% auto; /* permet de justifier et de mettre en le bloc*/
+    margin-top: 100px;
+    text-align:left;
+    /*background-color: chocolate;*/
+    border-top: 2px solid gray;
+}
+/*code copié dans le tuto*/
+.map{
+    width: 100%;
+    height: 100vh;
+}
+/* Contact côté gauche */
+.bloc7{
+    float: right;/* block placé coté droit à 60% */
+    width: 60%;
+    height: 200px;
+    margin: 10% auto; /* permet de justifier et de mettre une marge entre le bloc et footer*/
+    margin-top: 100px;
+    text-align:left;
+    border-top: 2px solid gray;
+}
 main{
     background-color: white;
 }
-
-.bloc{
-
-    width: 50
-}
-
 /* # :  on recupère <id="footer"> */
 #footer{
     float: left;
-    background-color: gainsboro; 
-    width: 100%; 
+    background-color: gainsboro;
+    width: 100%;
     height: 100%;
     text-align: center;
 }
-
 form{
-    margin: 35px;
+    margin: 5px;
 }
-
 /*.block-footer:nth-child(odd){ background-color: blue; }*/
-
 .fa-brands {
     color: black;
-    margin: 15px;
+    margin: 4px;
     font-size: 20px;
     padding: 10px;
 }
-© 2022 GitHub, Inc.

@@ -1,14 +1,14 @@
 <!doctype html>
 <html lang="en">
-
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <title>Colombra</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--Bootstrap-->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
-
+<!-- Font choisi sur google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -17,11 +17,13 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--API Lien qui permer d'afficher la carte https://www.openstreetmap.org/?mlat=48.85281&mlon=2.36423#map=19/48.85281/2.36423-->
+    <link rel = "stylesheet" href = "http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
 </head>
-
 <body>
   <!---------- creation d'une en tete -------------------->
-
+   <!--Création de l'ancre (video : https://www.youtube.com/watch?v=YfMQVUqA9Ek)-->
+   <a name="haut"></a>
   <header id="header">
     <!-- Conteneur auto centré -->
     <div class="conteneur1">
@@ -29,56 +31,43 @@
       <div class="logo">
         <span>
           <p>
-
             <img src="img/colombe.png" alt="logo" />
           </p>
         </span>
-
       </div>
-
-      <!--element de menu-->
+      <!--element de menu fictif-->
       <nav id="menu">
         <div> Service </div>
         <div> Municipalité </div>
-        <div> Participer!</div>
-        <div> Que faire à Paris?</div>
+        <div> Participer !</div>
+        <div> Que faire à Paris ?</div>
          <!-- <i class="fa-solid fa-magnifying-glass"></i>-->
         <div class="recherche"> Recherche</div>
-      
-     
       </nav>
     </div>
-
   </header>
   <!------------- création  du main -------------------------->
   <div id="contain">
     <main>
-
       <div class="conteneur">
         <!--photo de la  bibliotheque-->
         <div class="bloc1"><img src="img/institut.jpeg" alt=" bibliotheque">
         </div>
-
         <script src="js/script.js"></script>
-
         <!--photo sera sur la gauche-->
         <div class="bloc2">
           <h1>Bibliothèque <br> Colombra<br></h1>
-          
           <i class="fa-solid fa-clock"></i>
           <span id="dateheure"></span>
         </div>
-
         <div class="bloc3">
-          <h3>Bienvenue à la Bibliothèque COLOMBRA!- <br>objectif du site </h3>
-
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore maxime atque, eos fugiat illum facere
-            labore eum saepe molestiae odio minima iusto provident voluptates aliquid, omnis tempore quo quasi magni.
+          <h3>Bienvenue les Clara ! <br></h3>
+          <p> Voici Les 1000 titres les plus réservés dans notre bibliothèques de prêt. <br> <br>
+        Vous pourrez effectuer une selection parmis les différentes catégories existantes. <br><br>
+            Vous trouverez un classement par rang (oeuvre les plus lu), le titre et l'auteur de chaque oeuvre. <br>
           </p>
         </div>
-
         <!-- Inverser BOUTON ET SOMMAIRE -->
-
         <!--Bouton pour choisir les catégorie en -->
         <div class="bouton">
           <div class="input-group mb-3">
@@ -92,17 +81,12 @@
               <option value="5">GPS</option>
             </select>
           </div>  <!--fin input-group mb-3-->
-
           <table id="afficheTableau">
-
-
           </table>
-
           <!--Bloc affichage horaire coté droit-->
           <div class="bloc4">
             <!--Titre Horaire...-->
             <h4>Horaires </h4>
-
             <section>
               <div>Lundi</div>
               <div>Mardi </div>
@@ -112,9 +96,7 @@
               <div>Samedi</div>
               <div>Dimanche</div>
             </section>
-
             <section>
-
               <div>Fermeture</div>
               <div>10:00 à 19:00</div>
               <div>10:00 à 19:00</div>
@@ -124,35 +106,58 @@
               <div>Fermeture</div>
             </section>
           </div>
-
           <!--Bloc Sommaire-->
           <div class="bloc5">
             <!--Titre Sommaire...-->
             <div>
+              <!--direction pour point d'ancrage -->
+              <a name="sommaire"></a>
               <h4>Sommaire</h4>
             </div>
             <br>
             <ul>
               <!--puces -->
-              <li>Horaires</li>
-              <li>Accès</li>
+              <!--direction pour le point d'ancrage; direction->name (video : https://www.youtube.com/watch?v=YfMQVUqA9Ek)-->
+              <a href="#sommaire"><li>Horaires</li></a>
               <!-- block à créer trouver api pour met
               ttre une carte -->
-              <li>Contact</li> <!-- block à créer -->
-              <li>Services</li> <!-- block à créer -->
+              <a href="#acces"><li>Accès</li></a>
+              <a href="#contact"><li>Contact</li> </a>
+              <!-- block à créer -->
             </ul>
           </div>
-
-
         </div>
-
-      </div>
+        <div class="bloc6">
+          <div>
+              <!--Création de l'ancre-->
+              <a name="acces"></a>
+              <!--Titre Accès..-->
+              <h4>Accès</h4>
+              <br>
+              <div class="map">
+              <iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=2.363098561763764%2C48.85224728351919%2C2.3653516173362736%2C48.85336621873325&amp;layer=mapnik&amp;marker=48.85280675425217%2C2.3642250895500183" style="border: 1px solid black"></iframe><br/><small><a href="https://www.openstreetmap.org/?mlat=48.85281&amp;mlon=2.36423#map=19/48.85281/2.36423">Afficher une carte plus grande</a></small>
+              </div>
+          </div>
+        </div>
+        <div class="bloc7">
+          <!--Contact-->
+          <div>
+            <a name="contact"></a>
+              <h4>Contact</h4>
+              <!--balise strong temporaire, créer un id pour mettre en gras ds le css-->
+              <div> Nom : Bibliothèque Colombra</div>
+              <div>Tél.: 09 71 29 95 92 </div>
+              <div>Courriel : bibliothequecolombra@paris.fr </div>
+          </div>
+          <br>
+            <!--direction pour le point d'ancrage; direction->name-->
+            <a href="#haut"><p>Revenir en haut</p></a>
+        </div>
     </main>
   </div>
-
   <!--------------  Création du footer ------------------------------>
   <footer>
-    <!--pied de page contenant les 2 blocs-->
+    <!--pied de page contenant 1 bloc-->
     <footer id="footer">
       <p>Recevez chaque semaine notre actualité</p>
       <form>
@@ -160,19 +165,13 @@
         <input type="submit" id="submit" value="S'abonner"> <br>
       </form>
       <p>Suivez-nous sur nos réseaux</p>
-
       <div class="conteneur2">
         <i class="fa-brands fa-facebook"></i>
         <i class="fa-brands fa-twitter"></i>
         <i class="fa-brands fa-instagram"></i>
         <i class="fa-brands fa-linkedin"></i>
-
       </div>
-
     </footer>
-
   </footer>
-
 </body>
-
 </html>
