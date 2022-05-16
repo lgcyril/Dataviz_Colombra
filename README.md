@@ -1,4 +1,4 @@
-# Dataviz_Colombra : Second group projet at <a href="https://adatechschool.fr/" target="_blank">Ada Tech School!</a> In eight days only with three developers.
+# Dataviz_Colombra : Second group project at <a href="https://adatechschool.fr/" target="_blank">Ada Tech School!</a> In eight days only with three developers.
 **Colombra Team :** Sandy, Cyril, Fanny<br>
 
 **The idea :** In eight days, our trio co-developed a website to display the most borrowed books and comics in the libraries of Paris via a call to API.<br>
